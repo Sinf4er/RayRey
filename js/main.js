@@ -1,7 +1,8 @@
 var opts = {
   method: "GET",
   headers: {
-
+    "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, HEAD, OPTIONS",
+    "Access-Control-Allow-Origin": "*"
   }
 };
 fetch(
