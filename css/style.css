@@ -70,9 +70,9 @@ p {
   font-size: 16px;
   font-family: "Libre Franklin", sans-serif;
   color: #b3b3b3;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px;
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 }
 
 a:hover,
@@ -81,7 +81,7 @@ a:focus {
 }
 
 .hero-section {
-  height: 80vh;
+  height: calc(100vh - 79px);
   overflow: hidden;
   position: relative;
   display: flex;
@@ -90,14 +90,14 @@ a:focus {
 
 .video {
   background-color: black;
-  height: 80vh;
+  height: calc(100vh - 79px);
   width: 99.1vw;
 }
 
 .video-overlay {
   position: absolute;
   background-color: #000;
-  height: 80vh;
+  height: calc(100vh - 79px);
   width: 99.1vw;
   z-index: 2;
   opacity: 0.8;
@@ -176,9 +176,18 @@ a:focus {
   flex-wrap: wrap;
 }
 
+.about-container:last-child {
+  margin-right: 80px;
+}
+
 .sequenz {
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
 }
 
 .text {
@@ -186,8 +195,14 @@ a:focus {
 }
 
 .title-section {
-  text-align: left;
   margin-bottom: 15px;
+}
+
+.span-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-section span {
@@ -229,6 +244,84 @@ a:focus {
   display: inline-block;
   font-weight: 700;
   padding: 12px 30px 10px;
+}
+
+.stream-section {
+  background-color: #222222;
+  padding-bottom: 50px;
+}
+
+.section-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.section-container .title-section span {
+  text-align: center;
+}
+
+.streams {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.twitch-iframe {
+  height: 338px;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.banner {
+  background-color: #191919;
+  background-blend-mode: soft-light;
+}
+
+.banner p {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.twitch-iframe:nth-child(odd) {
+  margin-right: 50px;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+footer .footer-container {
+  padding: 20px;
+  align-items: center;
+}
+
+footer svg {
+  height: 20px;
+  width: 20px;
+}
+
+footer .menu {
+  flex-basis: 12%;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section a {
+  color: #5a5aff;
 }
 
 @keyframes pulse-white {
