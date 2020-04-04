@@ -1,5 +1,5 @@
 var opts = {
-  method: "GET",
+  method: "post",
   headers: {}
 };
 fetch(
