@@ -2,8 +2,7 @@ var opts = {
   method: "GET",
   headers: {
     "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, HEAD, OPTIONS",
-    "Access-Control-Allow-Origin":
-      "https://sinf4er.github.io/RayRey/index.html",
+    "Access-Control-Allow-Origin": "https://sinf4er.github.io",
     "Access-Control-Allow-Headers":
       "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
   }
