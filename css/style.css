@@ -235,15 +235,13 @@ a:focus {
   display: inline-block;
   font-weight: 700;
   padding: 12px 30px 10px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
-.btn-secondary {
-  font-size: 16px;
-  color: #5a5aff;
+.btn-primary:hover {
   background-color: #fff;
-  display: inline-block;
-  font-weight: 700;
-  padding: 12px 30px 10px;
+  color: #5a5aff;
 }
 
 .stream-section {
@@ -309,6 +307,7 @@ footer .footer-container {
 footer svg {
   height: 20px;
   width: 20px;
+  transition: all 0.3s ease;
 }
 
 footer .menu {
