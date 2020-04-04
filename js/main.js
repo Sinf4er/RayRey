@@ -1,8 +1,10 @@
 var opts = {
   method: "GET",
+  mode: "no-cors",
   headers: {
     "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, HEAD, OPTIONS",
-    "Access-Control-Allow-Origin": "*"
+    "Access-Control-Allow-Origin": "*",
+    Accept: "application/json"
   }
 };
 fetch(
@@ -10,7 +12,7 @@ fetch(
   opts
 )
   .then(function(response) {
-    return response.json();
+    return response;
   })
   .then(function(body) {
     console.log(body);
