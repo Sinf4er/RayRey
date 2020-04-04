@@ -1,10 +1,11 @@
 var opts = {
   method: "GET",
-  mode: "no-cors",
   headers: {
     "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, HEAD, OPTIONS",
-    "Access-Control-Allow-Origin": "*",
-    Accept: "application/json"
+    "Access-Control-Allow-Origin":
+      "https://sinf4er.github.io/RayRey/index.html",
+    "Access-Control-Allow-Headers":
+      "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
   }
 };
 fetch(
@@ -12,7 +13,7 @@ fetch(
   opts
 )
   .then(function(response) {
-    return response;
+    return response.json();
   })
   .then(function(body) {
     console.log(body);
