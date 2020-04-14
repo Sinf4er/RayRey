@@ -1,6 +1,6 @@
 const Riotopts = {
   method: "GET",
-  headers: {},
+  headers: { "Access-Control-Allow-Origin": "*" },
 };
 
 const key = "RGAPI-954667d5-18e2-4037-addf-5b0d07520fef";
