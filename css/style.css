@@ -187,7 +187,11 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 103px 0 0 120px;
+  padding: 60px 0 0 120px;
+}
+
+.text-box span {
+  margin-bottom: 20px;
 }
 
 .text {

@@ -1,9 +1,9 @@
-var Riotopts = {
+const Riotopts = {
   method: "GET",
   headers: {},
 };
 
-var key = "RGAPI-954667d5-18e2-4037-addf-5b0d07520fef";
+const key = "RGAPI-954667d5-18e2-4037-addf-5b0d07520fef";
 
 fetch(
   "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/RayRey?api_key=" +
@@ -25,6 +25,14 @@ fetch(
         return response.json();
       })
       .then(function (body) {
-        console.log(body);
+        const ranked = document.querySelector("#rank");
+        const lp = document.querySelector("#lp");
+        const win = document.querySelector("#win");
+        const lose = document.querySelector("#lose");
+
+        ranked.innerHTML = body[0].tier + " " + body[0].rank;
+        lp.innerHTML = body[0].leaguePoints;
+        win.innerHTML = body[0].wins;
+        lose.innerHTML = body[0].losses;
       });
   });
