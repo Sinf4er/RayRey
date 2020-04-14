@@ -24,6 +24,7 @@
 
 .menu {
   display: flex;
+  align-items: center;
 }
 
 .menu li {
@@ -40,6 +41,7 @@
 
 .menu .active {
   color: #5a5aff;
+  border-bottom: 2px solid #5a5aff;
 }
 
 h1 {
@@ -176,22 +178,20 @@ a:focus {
   flex-wrap: wrap;
 }
 
-.about-container:last-child {
-  margin-right: 80px;
-}
-
 .sequenz {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.img-box {
+.text-box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 103px 0 0 120px;
 }
 
 .text {
-  padding: 30px 0 0 20px;
+  padding: 0px 0 0 20px;
 }
 
 .title-section {
@@ -205,7 +205,7 @@ a:focus {
   justify-content: center;
 }
 
-.title-section span {
+span {
   color: #5a5aff;
   font-size: 14px;
   font-weight: 700;
@@ -275,6 +275,10 @@ a:focus {
   margin-bottom: 50px;
 }
 
+.frames {
+  margin: 50px 0;
+}
+
 .banner {
   background-color: #191919;
   background-blend-mode: soft-light;
@@ -304,7 +308,7 @@ footer .footer-container {
   align-items: center;
 }
 
-footer svg {
+.menu svg {
   height: 20px;
   width: 20px;
   transition: all 0.3s ease;
@@ -321,6 +325,21 @@ footer .menu {
 
 .footer-section a {
   color: #5a5aff;
+}
+
+.rank,
+.lp,
+.win,
+.lose {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rank,
+.lp {
+  margin-bottom: 50px;
 }
 
 @keyframes pulse-white {

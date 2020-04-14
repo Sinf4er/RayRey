@@ -2,14 +2,29 @@ var Riotopts = {
   method: "GET",
   headers: {},
 };
+
+var key = "RGAPI-954667d5-18e2-4037-addf-5b0d07520fef";
+
 fetch(
-  "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/hVnA4aaJn9mfQByRyY4EAbfb-tZiG9SM_pxG_oDJ-Qv8nfY?api_key=RGAPI-81dbd514-27ea-4eaa-9128-2f16562d429d",
+  "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/RayRey?api_key=" +
+    key,
   Riotopts
 )
   .then(function (response) {
     return response.json();
   })
   .then(function (body) {
-    console.log(body);
+    fetch(
+      "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/" +
+        body.id +
+        "?api_key=" +
+        key,
+      Riotopts
+    )
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (body) {
+        console.log(body);
+      });
   });
-  
