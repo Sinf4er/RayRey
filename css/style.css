@@ -1,3 +1,28 @@
+/*Temporär*/
+
+main {
+  background-color: #222;
+  height: calc(100vh - 79px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h2 {
+  color: #fff;
+  font-size: 90px;
+}
+
+main p {
+  font-size: 22px;
+}
+
+.lol {
+  text-align: center;
+}
+
+/* end*/
+
 * {
   text-decoration: none;
   margin: 0;
