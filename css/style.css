@@ -72,7 +72,7 @@ header .container .menu li:first-child {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .hamburger-box {
@@ -271,7 +271,7 @@ a:focus {
 .video {
   background-color: black;
   height: calc(100vh - 79px);
-  width: 99.1vw;
+  width: 100vw;
 }
 
 .video-overlay {
@@ -532,6 +532,19 @@ footer .menu {
 }
 
 @media only screen and (max-width: 1250px) {
+
+  .streams {
+    margin: 0 25px;
+  }
+
+  .title-section {
+    margin: 0 25px;
+  }
+
+  .title-section h2 {
+    font-size: 39px;
+  }
+
   .twitch-iframe:nth-child(odd) {
     margin-right: 0;
   }
@@ -572,6 +585,7 @@ footer .menu {
   .twitch-iframe {
     height: 250px;
     width: 100%;
+    margin-bottom: 25px;
   }
 
   .mobile-nav {
@@ -592,6 +606,7 @@ footer .menu {
 
   footer .container .menu li:first-child {
     padding: 0;
+    
   }
 
   footer .logo-section {
