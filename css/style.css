@@ -134,8 +134,9 @@ header .container .menu li:first-child {
 .mobile-nav {
   visibility: hidden;
   display: none;
+  margin-top: 79px;
   background-color: #191919;
-  height: 100vh;
+  height: calc(100vh - 79px);
   width: 100vw;
   position: absolute;
   left: 0;
@@ -531,7 +532,14 @@ footer .menu {
   margin-bottom: 50px;
 }
 
+.background-image {
+  display: none;
+}
+
 @media only screen and (max-width: 1250px) {
+  .video {
+    width: 100%;
+  }
 
   .streams {
     margin: 0 25px;
@@ -561,6 +569,20 @@ footer .menu {
 }
 
 @media only screen and (max-width: 600px) {
+  .background-image {
+    height: calc(100vh - 79px);
+    width: 100vw;
+    display: block;
+    background-image: url(../img/lol.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .video {
+    display: none;
+  }
+
   .hamburger {
     display: block;
   }
@@ -606,7 +628,6 @@ footer .menu {
 
   footer .container .menu li:first-child {
     padding: 0;
-    
   }
 
   footer .logo-section {
