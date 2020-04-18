@@ -1,38 +1,14 @@
-const Riotopts = {
-  method: "GET",
-  headers: {},
-};
+document.querySelector(".to-about").addEventListener("click", (_e) => {
+  _e.preventDefault();
+  TweenLite.to(window, 1, { scrollTo: ".about-section" });
+});
 
-const key = "";
+document.querySelector(".to-about2").addEventListener("click", (_e) => {
+  _e.preventDefault();
+  TweenLite.to(window, 1, { scrollTo: ".about-section" });
+});
 
-fetch(
-  "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/RayRey?api_key=" +
-    key,
-  Riotopts
-)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (body) {
-    fetch(
-      "https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/" +
-        body.id +
-        "?api_key=" +
-        key,
-      Riotopts
-    )
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (body) {
-        const ranked = document.querySelector("#rank");
-        const lp = document.querySelector("#lp");
-        const win = document.querySelector("#win");
-        const lose = document.querySelector("#lose");
-
-        ranked.innerHTML = body[0].tier + " " + body[0].rank;
-        lp.innerHTML = body[0].leaguePoints;
-        win.innerHTML = body[0].wins;
-        lose.innerHTML = body[0].losses;
-      });
-  });
+document.querySelector(".to-top").addEventListener("click", (_e) => {
+  _e.preventDefault();
+  TweenLite.to(window, 1, { scrollTo: ".header-section" });
+});
