@@ -1,30 +1,6 @@
-/*Temporär*/
-.dasvg {
-  width: 100px;
-  height: 100px;
+#myShop {
+  overflow: hidden;
 }
-
-main {
-  background-color: #222;
-  height: calc(100vh - 79px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main h2 {
-  color: #fff;
-  font-size: 90px;
-}
-
-main p {
-  font-size: 22px;
-}
-
-.lol {
-  text-align: center;
-}
-
 /* end*/
 
 * {
@@ -395,7 +371,7 @@ a:focus {
   justify-content: center;
 }
 
-span {
+.span {
   color: #5a5aff;
   font-size: 14px;
   font-weight: 700;
