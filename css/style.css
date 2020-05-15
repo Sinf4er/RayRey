@@ -591,6 +591,12 @@ footer .menu {
 #slide-2 {
   background-color: #222;
   overflow: hidden;
+  flex-flow: column;
+}
+
+#slide-2 h2 {
+  color: #fff;
+  margin-bottom:30px;
 }
 
 .slide-container {
