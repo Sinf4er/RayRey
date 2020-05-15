@@ -30,3 +30,5 @@ document.querySelector(".to-about3").addEventListener("click", (_e) => {
   body.classList.toggle("fixed");
   mobileMenu.classList.toggle("is-open");
 });
+
+document.querySelector('.')
