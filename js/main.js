@@ -31,4 +31,14 @@ document.querySelector(".to-about3").addEventListener("click", (_e) => {
   mobileMenu.classList.toggle("is-open");
 });
 
-document.querySelector('.')
+var nav = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  let scrollposition = window.scrollY;
+  
+  if(scrollposition > 100) {
+    nav.classList.add('nav-hidden');
+  } else {
+    nav.classList.remove('nav-hidden');
+  }
+});
