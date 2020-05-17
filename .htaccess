@@ -1,7 +1,8 @@
 DirectoryIndex index.html
 
-RewriteEngine On
+RewriteEngine On 
 
-#removeShopStuff
-RewriteCond %{QUERY_STRING} ^(. )&(. )$
-RewriteRule ^(.*)$ /$1?%1&%2 [L,R]
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
