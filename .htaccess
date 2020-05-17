@@ -2,9 +2,6 @@ DirectoryIndex index.html
 
 RewriteEngine On
 
-#removeHTML
-RewriteRule ^([a-zA-z0-9]+).html$ /$1   [L,R=301]
-
 #removeShopStuff
 RewriteCond %{QUERY_STRING} ^(. )&(. )$
 RewriteRule ^(.*)$ /$1?%1&%2 [L,R]
