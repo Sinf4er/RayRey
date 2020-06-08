@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   font-family: "Libre Franklin", sans-serif;
-  word-break: break-word;
 }
 
 .header-section {
@@ -589,6 +588,15 @@ footer .menu {
   color: #eee;
   padding: 50px 15rem 20px;
 }
+
+.imprint-container h1,
+.imprint-container h2,
+.imprint-container h3,
+.imprint-container h4,
+.imprint-container h5 {
+  word-break: break-word;
+}
+
 
 #slide-2 {
   background-color: #222;
