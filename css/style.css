@@ -195,12 +195,19 @@ header .container .menu li:first-child {
   align-items: center;
 }
 
-.menu li {
+.menu-social {
+  display: flex;
+  align-items: center;
+}
+
+.menu li,
+.menu-social li {
   list-style: none;
   padding-left: 30px;
 }
 
-.menu a {
+.menu a,
+.menu-social a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -544,13 +551,16 @@ footer .container {
   padding: 25px 0;
 }
 
-.menu svg {
+.menu svg,
+.menu-social svg {
   height: 20px;
   width: 20px;
   transition: all 0.3s ease;
 }
 
-footer .menu {
+
+footer .menu,
+footer .menu-social {
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -597,7 +607,6 @@ footer .menu {
   word-break: break-word;
 }
 
-
 #slide-2 {
   background-color: #222;
   overflow: hidden;
@@ -606,7 +615,7 @@ footer .menu {
 
 #slide-2 h2 {
   color: #fff;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .slide-container {
@@ -715,7 +724,6 @@ footer .menu {
   .row-2 {
     max-width: 100%;
     flex: 100%;
-
   }
 
   .text {
@@ -748,7 +756,8 @@ footer .menu {
     flex-direction: column;
   }
 
-  footer .container .menu li:first-child {
+  footer .container .menu li:first-child,
+  footer .container .menu-social li:first-child {
     padding: 0;
   }
 
@@ -756,7 +765,8 @@ footer .menu {
     margin-bottom: 30px;
   }
 
-  footer .menu {
+  footer .menu,
+  footer .menu-social {
     padding-bottom: 30px;
   }
 
@@ -779,5 +789,11 @@ footer .menu {
 
   .imprint-container {
     padding: 50px 3rem 20px;
+  }
+}
+
+@media only screen and (max-width: 458px) {
+  .menu li:last-child {
+    padding: 0;
   }
 }
