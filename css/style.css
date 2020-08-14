@@ -519,7 +519,7 @@ a:focus {
 }
 
 .banner {
-  background-color: #191919;
+  background-color: #222;
   background-blend-mode: soft-light;
 }
 
@@ -533,7 +533,7 @@ a:focus {
 }
 
 footer {
-  background-color: #222;
+  background-color: #191919;
   color: #fff;
 }
 
